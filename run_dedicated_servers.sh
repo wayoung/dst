@@ -2,7 +2,7 @@
 
 steamcmd_dir="$HOME/steamcmd"
 install_dir="$HOME/dontstarvetogether_dedicated_server"
-cluster_name="$cluster_name"
+cluster_name="svr"
 dontstarve_dir="$HOME/.klei/DoNotStarveTogether"
 
 function fail()
