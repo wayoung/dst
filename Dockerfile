@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
-RUN mkdir -p ~/.klei/DoNotStarveTogether/svr
+RUN \
+  mkdir -p ~/.klei/DoNotStarveTogether/MyDediServer/Master && \
+  mkdir -p ~/.klei/DoNotStarveTogether/MyDediServer/Caves
 
 ADD Master ~/.klei/DoNotStarveTogether/svr/Master
 ADD Caves ~/.klei/DoNotStarveTogether/svr/Caves
@@ -13,7 +15,7 @@ RUN \
   apt-get install -y libstdc++6 libgcc1 libcurl4-gnutls-dev wget && \
   wget -P ~/steamcmd https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz  && \
   tar -xvzf ~/steamcmd/steamcmd_linux.tar.gz -C ~/steamcmd/ && \
-  chmod u+x ~/.klei/DoNotStarveTogether/svr/run_dedicated_servers.sh
+  sudo chmod u+x ~/.klei/DoNotStarveTogether/svr/run_dedicated_servers.sh
 
 ENTRYPOINT ["~/run_dedicated_servers.sh"]
 
