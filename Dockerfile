@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+RUN mkdir -p ~/.klei/DoNotStarveTogether/svr
+
 ADD Master ~/.klei/DoNotStarveTogether/svr/Master
 ADD Caves ~/.klei/DoNotStarveTogether/svr/Caves
 ADD cluster_token.txt ~/.klei/DoNotStarveTogether/svr
