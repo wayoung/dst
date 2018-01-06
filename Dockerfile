@@ -19,4 +19,4 @@ RUN \
 
 EXPOSE 11000 11001
 
-CMD ["/bin/bash", "/root/.klei/DoNotStarveTogether/svr/run_dedicated_servers.sh"]
+CMD ["/bin/bash"]
