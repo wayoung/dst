@@ -12,7 +12,7 @@ COPY run_dedicated_servers.sh /root/.klei/DoNotStarveTogether/svr
 
 RUN \
   apt-get update && \
-  apt-get install -y lib32stdc++6 lib32gcc1 libcurl3-gnutls-dev wget && \
+  apt-get install -y lib32stdc++6 lib32gcc1 libcurl4-gnutls-dev curl wget && \
   wget -P /root/steamcmd https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz  && \
   tar -xvzf /root/steamcmd/steamcmd_linux.tar.gz -C /root/steamcmd/ && \
   chmod u+x /root/.klei/DoNotStarveTogether/svr/run_dedicated_servers.sh
